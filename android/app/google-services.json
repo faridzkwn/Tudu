@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "328714969217",
+    "project_id": "tudu-79756",
+    "storage_bucket": "tudu-79756.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328714969217:android:0c489e73818f772ecdad80",
+        "android_client_info": {
+          "package_name": "com.example.tudu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328714969217-t05mfdnkchpdrl6pagn3q6rbjc7irong.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tudu",
+            "certificate_hash": "903da0ee448a3a225fca743035aff175219b8e14"
+          }
+        },
+        {
+          "client_id": "328714969217-h4u2ngol1ffbvsj1gnv9kpr1veqeo61v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZiXi8xcjCJdgU1J5vwgFjnHfTY_wW6mk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328714969217-h4u2ngol1ffbvsj1gnv9kpr1veqeo61v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
