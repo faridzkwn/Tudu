@@ -85,31 +85,28 @@ class _LoginPageState extends State<LoginPage> {
                           final form = _formKey.currentState;
                           form?.save();
 
-                          if (form!.validate())
-                            {
-                              try {
-                                 await auth.FirebaseAuth.instance.signInWithEmailAndPassword(email: _email, password: _password);
+                          if (form!.validate()) {
+                            try {
+                              await auth.FirebaseAuth.instance
+                                  .signInWithEmailAndPassword(
+                                  email: _email, password: _password);
 
-                                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage()));
-                                print('Signed In');
-                              }on auth.FirebaseAuthException catch (e)
-                              {
-                                if (e.code == 'user-not-found') {
-                                  print('No user found for that email.');
-                                  _showMyDialog(
-                                      context, 'No user found for that email.');
-                                } else if (e.code == 'wrong-password') {
-                                  print('Wrong password provided for that user.');
-                                  _showMyDialog(context,
-                                      'Wrong password provided for that user.');
-                                }
+                              Navigator.pushReplacement(context,
+                                  MaterialPageRoute(
+                                      builder: (context) => HomePage()));
+                              print('Signed In');
+                            } on auth.FirebaseAuthException catch (e) {
+                              if (e.code == 'user-not-found') {
+                                print('No user found for that email.');
+                                _showMyDialog(
+                                    context, 'No user found for that email.');
+                              } else if (e.code == 'wrong-password') {
+                                print('Wrong password provided for that user.');
+                                _showMyDialog(context,
+                                    'Wrong password provided for that user.');
                               }
-
-
-                          }
                             }
-
-
+                          }
                         },
                         child: const Text('LOGIN'),
 
