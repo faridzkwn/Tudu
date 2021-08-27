@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({ Key? key }) : super(key: key);
+  
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -10,7 +10,18 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    AppBar(backgroundColor: Color(0xff79E0C1),);
+
+    return Scaffold(
+      
+      body: Container(
+        child: Column(
+          
+          children: <Widget>[
+
+
+          ],
+        ) ,),
       
     );
   }
